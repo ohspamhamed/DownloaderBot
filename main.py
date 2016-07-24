@@ -23,7 +23,7 @@ def n(m):
     if re.match('^/(help|start)$',text):
         bot.send_message(m.chat.id, """
 1> /id
-2> <code>send url png|jpg</code>
+2> <code>send url png|jpg|zip</code>
 3> #Soon
         """,parse_mode='HTML')
     if m.chat.type == 'private':
