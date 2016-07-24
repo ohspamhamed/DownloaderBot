@@ -5,7 +5,7 @@ import re
 from urllib import urlretrieve as dw
 import sys
 import os
-import color
+#import color
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
