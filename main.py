@@ -5,6 +5,7 @@ import re
 from urllib import urlretrieve as dw
 import sys
 import os
+import color
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
@@ -16,6 +17,7 @@ botusername = 'Usernamebot'
 def n(m):
     text = m.text
     id = m.from_user.id
+    print 'Text : \033[32m{}\nID : \033[31m{}'.format(text,id)
     if re.match('^/(id|who)$',text):
         bot.send_message(m.chat.id, m.from_user.id)
     if re.match('^/(help|start)$',text):
