@@ -44,7 +44,7 @@ def n(m):
             os.remove('file.zip')
     if m.chat.type == 'group' or  m.chat.type == 'supergroup':
         if m.reply_to_message:
-            if m.reply_to_message.from_user.username == botusername':
+            if m.reply_to_message.from_user.username == botusername:
                 if re.match('(ftp|http|https)://.*\.(png)$',text):
                     bot.send_message(m.chat.id, 'ok wait')
                     dw(text,'s.png')
